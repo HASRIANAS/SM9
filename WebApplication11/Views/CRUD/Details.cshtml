@@ -1,0 +1,250 @@
+﻿@model WebApplication11.Models.sm9Class
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>sm9Class</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Responsable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Responsable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Heure_d_ouverture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Heure_d_ouverture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Heure_de_résolution)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Heure_de_résolution)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Heure_de_clôture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Heure_de_clôture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_Incident)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Incident)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Priorité)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Priorité)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.État_de_l_alerte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.État_de_l_alerte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.État)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.État)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CI_concerné)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CI_concerné)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Service_concerné_principal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Service_concerné_principal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Application)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Application)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Catégorie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Catégorie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.New_Cat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.New_Cat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Start_Date_Cal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Start_Date_Cal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.End_Date_Cal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.End_Date_Cal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.week_in)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.week_in)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.week_out)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.week_out)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.year_in)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.year_in)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.year_out)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.year_out)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year___Week_in)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year___Week_in)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year___Week_Out)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year___Week_Out)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.P)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.P)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Slo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Slo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Realisation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Realisation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SLA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SLA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Best_effort)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Best_effort)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.M_D)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.M_D)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

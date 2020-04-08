@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SM9_MANTISModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MANTIS_TB">
+    <Key>
+      <PropertyRef Name="Identifiant" />
+    </Key>
+    <Property Name="Identifiant" Type="int" Nullable="false" />
+    <Property Name="Projet" Type="nvarchar" MaxLength="100" />
+    <Property Name="Résumé" Type="nvarchar" MaxLength="100" />
+    <Property Name="Date de soumission" Type="datetime" />
+    <Property Name="P" Type="nvarchar" MaxLength="100" />
+    <Property Name="Rapporteur" Type="nvarchar" MaxLength="100" />
+    <Property Name="Assigné à" Type="nvarchar" MaxLength="100" />
+    <Property Name="Priorité" Type="nvarchar" MaxLength="100" />
+    <Property Name="Impact" Type="nvarchar" MaxLength="100" />
+    <Property Name="Catégorie" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mis à jour" Type="datetime" />
+    <Property Name="Date résolution" Type="nvarchar" MaxLength="100" />
+    <Property Name="Résolution" Type="nvarchar" MaxLength="100" />
+    <Property Name="Charge Num" Type="float" />
+    <Property Name="Charge" Type="nvarchar" MaxLength="100" />
+    <Property Name="Conso Num" Type="float" />
+    <Property Name="Consommé" Type="nvarchar" MaxLength="100" />
+    <Property Name="Statut" Type="nvarchar" MaxLength="100" />
+    <Property Name="TL" Type="nvarchar" MaxLength="100" />
+    <Property Name="Projet Court" Type="nvarchar" MaxLength="100" />
+    <Property Name="Resp" Type="nvarchar" MaxLength="100" />
+    <Property Name="Week in" Type="float" />
+    <Property Name="Week out" Type="float" />
+    <Property Name="Week update" Type="float" />
+    <Property Name="Year in" Type="float" />
+    <Property Name="Year out" Type="float" />
+    <Property Name="Year / Week in" Type="nvarchar" MaxLength="100" />
+    <Property Name="Year / Week Out" Type="nvarchar" MaxLength="100" />
+    <Property Name="SLA" Type="nvarchar" MaxLength="100" />
+    <Property Name="SR" Type="nvarchar" MaxLength="100" />
+    <Property Name="evo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Affectation" Type="float" />
+    <Property Name="TimeResol" Type="float" />
+    <Property Name="SLA EVOL" Type="nvarchar" MaxLength="100" />
+    <Property Name="Month" Type="float" />
+    <Property Name="à fermer" Type="float" />
+    <Property Name="Abandonnée" Type="float" />
+    <Property Name="Fermée" Type="float" />
+    <Property Name="Clos" Type="datetime" />
+    <Property Name="SLO" Type="float" />
+    <Property Name="Reopen" Type="nvarchar" MaxLength="100" />
+    <Property Name="EvoPriseEnCharge" Type="float" />
+    <Property Name="Domaine" Type="nvarchar" MaxLength="100" />
+    <Property Name="Typologie" Type="nvarchar" MaxLength="100" />
+    <Property Name="M/D" Type="float" />
+  </EntityType>
+  <EntityType Name="SM9">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Responsable" Type="nvarchar" MaxLength="100" />
+    <Property Name="Date/Heure d'ouverture" Type="datetime" />
+    <Property Name="Date/Heure de résolution" Type="datetime" />
+    <Property Name="Date/Heure de clôture" Type="datetime" />
+    <Property Name="ID Incident" Type="nvarchar" MaxLength="100" />
+    <Property Name="Priorité" Type="nvarchar" MaxLength="100" />
+    <Property Name="État de l'alerte" Type="nvarchar" MaxLength="100" />
+    <Property Name="État" Type="nvarchar" MaxLength="100" />
+    <Property Name="CI concerné" Type="nvarchar" MaxLength="100" />
+    <Property Name="Service concerné principal" Type="nvarchar" MaxLength="100" />
+    <Property Name="Titre" Type="nvarchar" MaxLength="100" />
+    <Property Name="Application" Type="nvarchar" MaxLength="100" />
+    <Property Name="Catégorie" Type="nvarchar" MaxLength="100" />
+    <Property Name="New Cat" Type="nvarchar" MaxLength="100" />
+    <Property Name="Start Date Cal" Type="datetime" />
+    <Property Name="End Date Cal" Type="datetime" />
+    <Property Name="week in" Type="float" />
+    <Property Name="week out" Type="float" />
+    <Property Name="year in" Type="float" />
+    <Property Name="year out" Type="float" />
+    <Property Name="Year / Week in" Type="nvarchar" MaxLength="100" />
+    <Property Name="Year / Week Out" Type="nvarchar" MaxLength="100" />
+    <Property Name="P" Type="nvarchar" MaxLength="5" />
+    <Property Name="Slo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Realisation" Type="nvarchar" MaxLength="100" />
+    <Property Name="SLA" Type="nvarchar" MaxLength="100" />
+    <Property Name="SR" Type="nvarchar" MaxLength="100" />
+    <Property Name="Best effort" Type="float" />
+    <Property Name="M/D" Type="float" />
+  </EntityType>
+  <EntityContainer Name="SM9_MANTISModelStoreContainer">
+    <EntitySet Name="MANTIS_TB" EntityType="Self.MANTIS_TB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SM9" EntityType="Self.SM9" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

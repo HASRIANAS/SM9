@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SM9_MANTISModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MANTIS_TB">
+    <Key>
+      <PropertyRef Name="Identifiant" />
+    </Key>
+    <Property Name="Identifiant" Type="Int32" Nullable="false" />
+    <Property Name="Projet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Résumé" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Date_de_soumission" Type="DateTime" Precision="3" />
+    <Property Name="P" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Rapporteur" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Assigné_à" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Priorité" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Impact" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Catégorie" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Mis_à_jour" Type="DateTime" Precision="3" />
+    <Property Name="Date_résolution" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Résolution" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Charge_Num" Type="Double" />
+    <Property Name="Charge" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Conso_Num" Type="Double" />
+    <Property Name="Consommé" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Statut" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Projet_Court" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Resp" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Week_in" Type="Double" />
+    <Property Name="Week_out" Type="Double" />
+    <Property Name="Week_update" Type="Double" />
+    <Property Name="Year_in" Type="Double" />
+    <Property Name="Year_out" Type="Double" />
+    <Property Name="Year___Week_in" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Year___Week_Out" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SLA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SR" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="evo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Affectation" Type="Double" />
+    <Property Name="TimeResol" Type="Double" />
+    <Property Name="SLA_EVOL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Month" Type="Double" />
+    <Property Name="à_fermer" Type="Double" />
+    <Property Name="Abandonnée" Type="Double" />
+    <Property Name="Fermée" Type="Double" />
+    <Property Name="Clos" Type="DateTime" Precision="3" />
+    <Property Name="SLO" Type="Double" />
+    <Property Name="Reopen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EvoPriseEnCharge" Type="Double" />
+    <Property Name="Domaine" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Typologie" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="M_D" Type="Double" />
+  </EntityType>
+  <EntityType Name="SM9">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Responsable" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Date_Heure_d_ouverture" Type="DateTime" Precision="3" />
+    <Property Name="Date_Heure_de_résolution" Type="DateTime" Precision="3" />
+    <Property Name="Date_Heure_de_clôture" Type="DateTime" Precision="3" />
+    <Property Name="ID_Incident" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Priorité" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="État_de_l_alerte" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="État" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CI_concerné" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Service_concerné_principal" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Titre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Application" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Catégorie" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="New_Cat" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Start_Date_Cal" Type="DateTime" Precision="3" />
+    <Property Name="End_Date_Cal" Type="DateTime" Precision="3" />
+    <Property Name="week_in" Type="Double" />
+    <Property Name="week_out" Type="Double" />
+    <Property Name="year_in" Type="Double" />
+    <Property Name="year_out" Type="Double" />
+    <Property Name="Year___Week_in" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Year___Week_Out" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="P" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Slo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Realisation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SLA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SR" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Best_effort" Type="Double" />
+    <Property Name="M_D" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="SM9_MANTISEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MANTIS_TB" EntityType="Self.MANTIS_TB" />
+    <EntitySet Name="SM9" EntityType="Self.SM9" />
+  </EntityContainer>
+</Schema>

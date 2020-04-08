@@ -1,0 +1,201 @@
+﻿@model IEnumerable<WebApplication11.SM9>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Responsable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_Heure_d_ouverture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_Heure_de_résolution)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_Heure_de_clôture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_Incident)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Priorité)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.État_de_l_alerte)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.État)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CI_concerné)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service_concerné_principal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Application)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Catégorie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.New_Cat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Start_Date_Cal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.End_Date_Cal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.week_in)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.week_out)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.year_in)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.year_out)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year___Week_in)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year___Week_Out)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.P)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Slo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Realisation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SLA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Best_effort)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.M_D)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Responsable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_Heure_d_ouverture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_Heure_de_résolution)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_Heure_de_clôture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_Incident)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Priorité)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.État_de_l_alerte)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.État)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CI_concerné)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Service_concerné_principal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Application)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Catégorie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.New_Cat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Start_Date_Cal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.End_Date_Cal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.week_in)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.week_out)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.year_in)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.year_out)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year___Week_in)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year___Week_Out)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.P)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Slo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Realisation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SLA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Best_effort)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.M_D)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

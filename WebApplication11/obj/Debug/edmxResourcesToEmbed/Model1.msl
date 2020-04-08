@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SM9_MANTISModelStoreContainer" CdmEntityContainer="SM9_MANTISEntities">
+    <EntitySetMapping Name="MANTIS_TB">
+      <EntityTypeMapping TypeName="SM9_MANTISModel.MANTIS_TB">
+        <MappingFragment StoreEntitySet="MANTIS_TB">
+          <ScalarProperty Name="Identifiant" ColumnName="Identifiant" />
+          <ScalarProperty Name="Projet" ColumnName="Projet" />
+          <ScalarProperty Name="Résumé" ColumnName="Résumé" />
+          <ScalarProperty Name="Date_de_soumission" ColumnName="Date de soumission" />
+          <ScalarProperty Name="P" ColumnName="P" />
+          <ScalarProperty Name="Rapporteur" ColumnName="Rapporteur" />
+          <ScalarProperty Name="Assigné_à" ColumnName="Assigné à" />
+          <ScalarProperty Name="Priorité" ColumnName="Priorité" />
+          <ScalarProperty Name="Impact" ColumnName="Impact" />
+          <ScalarProperty Name="Catégorie" ColumnName="Catégorie" />
+          <ScalarProperty Name="Mis_à_jour" ColumnName="Mis à jour" />
+          <ScalarProperty Name="Date_résolution" ColumnName="Date résolution" />
+          <ScalarProperty Name="Résolution" ColumnName="Résolution" />
+          <ScalarProperty Name="Charge_Num" ColumnName="Charge Num" />
+          <ScalarProperty Name="Charge" ColumnName="Charge" />
+          <ScalarProperty Name="Conso_Num" ColumnName="Conso Num" />
+          <ScalarProperty Name="Consommé" ColumnName="Consommé" />
+          <ScalarProperty Name="Statut" ColumnName="Statut" />
+          <ScalarProperty Name="TL" ColumnName="TL" />
+          <ScalarProperty Name="Projet_Court" ColumnName="Projet Court" />
+          <ScalarProperty Name="Resp" ColumnName="Resp" />
+          <ScalarProperty Name="Week_in" ColumnName="Week in" />
+          <ScalarProperty Name="Week_out" ColumnName="Week out" />
+          <ScalarProperty Name="Week_update" ColumnName="Week update" />
+          <ScalarProperty Name="Year_in" ColumnName="Year in" />
+          <ScalarProperty Name="Year_out" ColumnName="Year out" />
+          <ScalarProperty Name="Year___Week_in" ColumnName="Year / Week in" />
+          <ScalarProperty Name="Year___Week_Out" ColumnName="Year / Week Out" />
+          <ScalarProperty Name="SLA" ColumnName="SLA" />
+          <ScalarProperty Name="SR" ColumnName="SR" />
+          <ScalarProperty Name="evo" ColumnName="evo" />
+          <ScalarProperty Name="Affectation" ColumnName="Affectation" />
+          <ScalarProperty Name="TimeResol" ColumnName="TimeResol" />
+          <ScalarProperty Name="SLA_EVOL" ColumnName="SLA EVOL" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="à_fermer" ColumnName="à fermer" />
+          <ScalarProperty Name="Abandonnée" ColumnName="Abandonnée" />
+          <ScalarProperty Name="Fermée" ColumnName="Fermée" />
+          <ScalarProperty Name="Clos" ColumnName="Clos" />
+          <ScalarProperty Name="SLO" ColumnName="SLO" />
+          <ScalarProperty Name="Reopen" ColumnName="Reopen" />
+          <ScalarProperty Name="EvoPriseEnCharge" ColumnName="EvoPriseEnCharge" />
+          <ScalarProperty Name="Domaine" ColumnName="Domaine" />
+          <ScalarProperty Name="Typologie" ColumnName="Typologie" />
+          <ScalarProperty Name="M_D" ColumnName="M/D" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SM9">
+      <EntityTypeMapping TypeName="SM9_MANTISModel.SM9">
+        <MappingFragment StoreEntitySet="SM9">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="Date_Heure_d_ouverture" ColumnName="Date/Heure d'ouverture" />
+          <ScalarProperty Name="Date_Heure_de_résolution" ColumnName="Date/Heure de résolution" />
+          <ScalarProperty Name="Date_Heure_de_clôture" ColumnName="Date/Heure de clôture" />
+          <ScalarProperty Name="ID_Incident" ColumnName="ID Incident" />
+          <ScalarProperty Name="Priorité" ColumnName="Priorité" />
+          <ScalarProperty Name="État_de_l_alerte" ColumnName="État de l'alerte" />
+          <ScalarProperty Name="État" ColumnName="État" />
+          <ScalarProperty Name="CI_concerné" ColumnName="CI concerné" />
+          <ScalarProperty Name="Service_concerné_principal" ColumnName="Service concerné principal" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Catégorie" ColumnName="Catégorie" />
+          <ScalarProperty Name="New_Cat" ColumnName="New Cat" />
+          <ScalarProperty Name="Start_Date_Cal" ColumnName="Start Date Cal" />
+          <ScalarProperty Name="End_Date_Cal" ColumnName="End Date Cal" />
+          <ScalarProperty Name="week_in" ColumnName="week in" />
+          <ScalarProperty Name="week_out" ColumnName="week out" />
+          <ScalarProperty Name="year_in" ColumnName="year in" />
+          <ScalarProperty Name="year_out" ColumnName="year out" />
+          <ScalarProperty Name="Year___Week_in" ColumnName="Year / Week in" />
+          <ScalarProperty Name="Year___Week_Out" ColumnName="Year / Week Out" />
+          <ScalarProperty Name="P" ColumnName="P" />
+          <ScalarProperty Name="Slo" ColumnName="Slo" />
+          <ScalarProperty Name="Realisation" ColumnName="Realisation" />
+          <ScalarProperty Name="SLA" ColumnName="SLA" />
+          <ScalarProperty Name="SR" ColumnName="SR" />
+          <ScalarProperty Name="Best_effort" ColumnName="Best effort" />
+          <ScalarProperty Name="M_D" ColumnName="M/D" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
